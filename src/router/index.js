@@ -4,7 +4,7 @@ import Details from '../components/Details.vue'
 import Maps from '../components/Maps.vue'
 
 export default new VueRouter({
-  router: [
+  routes: [
     {
       path: '/',
       name: 'List',
@@ -16,9 +16,9 @@ export default new VueRouter({
       component: Details
     },
     {
-      path: '/maps/:lat::lng',
+      path: '/maps/:lat/:lng',
       name: 'Maps',
       component: Maps
     }
-  ]    
+  ]
 })
